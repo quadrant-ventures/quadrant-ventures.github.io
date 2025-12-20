@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import HeroSection from "@/components/home/HeroSection";
+import AboutSection from "@/components/home/AboutSection";
+import VenturesSection from "@/components/home/VenturesSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Quadrant Ventures | Four Minds. Infinite Ventures.</title>
+        <meta
+          name="description"
+          content="Quadrant Ventures is a collective of four friends building businesses that bring people together. Explore our ventures including Pikler Pickleball Courts."
+        />
+        <meta name="keywords" content="Quadrant Ventures, startup, ventures, pickleball, Pikler, business, sports" />
+      </Helmet>
+
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <VenturesSection />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
