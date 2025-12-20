@@ -1,11 +1,4 @@
 const AboutSection = () => {
-  const founders = [
-    { name: "Founder One", role: "Visionary", color: "from-primary to-green-400" },
-    { name: "Founder Two", role: "Strategist", color: "from-primary to-emerald-400" },
-    { name: "Founder Three", role: "Builder", color: "from-primary to-lime-400" },
-    { name: "Founder Four", role: "Connector", color: "from-primary to-teal-400" },
-  ];
-
   return (
     <section id="about" className="py-24 lg:py-32 bg-background relative overflow-hidden">
       {/* Background accents */}
@@ -25,32 +18,6 @@ const AboutSection = () => {
             business partners – we're lifelong friends with a shared vision of
             creating experiences that matter.
           </p>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
-          {founders.map((founder, index) => (
-            <div
-              key={founder.name}
-              className="group relative"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="aspect-square bg-gradient-card rounded-2xl border border-border overflow-hidden hover-lift">
-                {/* Gradient overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${founder.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
-                
-                {/* Quadrant symbol */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 md:w-20 md:h-20 border-2 border-muted-foreground/20 rotate-45 group-hover:border-primary group-hover:rotate-[225deg] transition-all duration-700" />
-                </div>
-
-                {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background/90 to-transparent">
-                  <h3 className="font-display font-bold text-lg">{founder.name}</h3>
-                  <p className="text-primary text-sm font-medium">{founder.role}</p>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
