@@ -220,7 +220,7 @@ const Pikler = () => {
                     size="lg"
                     className="w-full"
                   >
-                    Get Started
+                    <a href="tel:+919096867887"> Call Us</a>
                   </Button>
                 </div>
               ))}
@@ -307,7 +307,7 @@ const Pikler = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                           </svg>
                         </div>
-                        <p className="text-muted-foreground"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.137583146596!2d73.93933177608773!3d18.56783498253488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3003fbdc9f1%3A0xf77e4bc3d578ff97!2sPikler%20Pickleball%20Court!5e0!3m2!1sen!2sin!4v1773164044539!5m2!1sen!2sin" width="600" height="450" style={{ border: 0, width: "25rem", height: "20rem" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></p>
+                        <p className="text-muted-foreground"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.137583146596!2d73.93933177608773!3d18.56783498253488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3003fbdc9f1%3A0xf77e4bc3d578ff97!2sPikler%20Pickleball%20Court!5e0!3m2!1sen!2sin!4v1773164044539!5m2!1sen!2sin" width="600" height="450" style={{ border: 0, width: "25rem", height: "20rem" }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></p>
                       </div>
                     </div>
                   </div>
