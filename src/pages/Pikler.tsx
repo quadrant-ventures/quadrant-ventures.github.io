@@ -9,9 +9,9 @@ import piklerHero from "@/assets/pikler-hero.jpg";
 const Pikler = () => {
   const features = [
     {
-      icon: "🏸",
+      icon: "🏓",
       title: "Premium Courts",
-      description: "6 professional-grade courts with Olympic-standard surfaces and perfect lighting for optimal play.",
+      description: "Professional-grade courts and perfect lighting for optimal play.",
     },
     {
       icon: "🎯",
