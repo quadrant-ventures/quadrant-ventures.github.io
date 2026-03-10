@@ -46,13 +46,13 @@ const VenturesSection = () => {
                   Pikler Pickleball Court
                 </h3>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Our first venture brings the fastest-growing sport in America
+                  Our first venture brings the fastest-growing sport
                   to your neighborhood. State-of-the-art courts, professional
                   equipment, and a vibrant community await.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    "Premium indoor & outdoor courts",
+                    "Premium courts",
                     "Professional coaching available",
                     "Equipment rental included",
                     "Community events & leagues",

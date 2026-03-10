@@ -35,20 +35,8 @@ const Navbar = () => {
                   : "text-foreground/70 hover:text-foreground"
               }`}
             >
-              Pikler Courts
+              Pikler
             </Link>
-            <a
-              href="#about"
-              className="font-medium text-foreground/70 hover:text-foreground transition-colors duration-200 link-underline"
-            >
-              About
-            </a>
-            <a
-              href="#contact"
-              className="font-medium text-foreground/70 hover:text-foreground transition-colors duration-200 link-underline"
-            >
-              Contact
-            </a>
           </div>
 
           <Button variant="hero" size="sm" asChild>

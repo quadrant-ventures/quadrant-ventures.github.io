@@ -40,22 +40,6 @@ const Footer = () => {
                   Pikler Courts
                 </Link>
               </li>
-              <li>
-                <a
-                  href="#about"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-200"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#ventures"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-200"
-                >
-                  Our Ventures
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -68,6 +52,15 @@ const Footer = () => {
                   className="hover:text-primary transition-colors duration-200"
                 >
                   hey.quadrant@gmail.com
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="tel:+919096867887"
+                  className="hover:text-primary transition-colors duration-200"
+                >
+                  &#x2706; +91 90968 67887
                 </a>
               </li>
             </ul>
@@ -125,12 +118,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Quadrant Ventures. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-primary transition-colors">
-              Terms of Service
-            </a>
+           
           </div>
         </div>
       </div>

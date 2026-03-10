@@ -29,7 +29,7 @@ const Pikler = () => {
       description: "Learn from certified coaches who can help you perfect your serve, dink, and everything in between.",
     },
     {
-      icon: "🎾",
+      icon: "🏓",
       title: "Equipment Included",
       description: "No gear? No problem. We provide paddles, balls, and all the equipment you need to play.",
     },
@@ -42,25 +42,31 @@ const Pikler = () => {
 
   const pricingPlans = [
     {
-      name: "Drop-In",
-      price: "$15",
-      period: "per session",
-      features: ["1.5 hour court access", "Equipment rental", "Locker room access"],
+      name: "Silver Membership",
+      price: "₹2,800",
+      priceType: "Regular Price",
+      launchPrice: "₹2,200",
+      launchPriceType: "Launch Price",
+      features: ["8 hours of Monthly Slots", "0 Peak Slots", "Equipment rental", "24 hours booking window"],
       popular: false,
     },
     {
-      name: "Monthly",
-      price: "$99",
-      period: "per month",
-      features: ["Unlimited court access", "Priority booking", "Free equipment", "Guest passes (2/mo)", "League discounts"],
+      name: "Gold Membership",
+      price: "₹5,500",
+      priceType: "Regular Price",
+      launchPrice: "₹4,500", 
+      launchPriceType: "Launch Price",
+      features: ["12 hours of Monthly Slots", "4 Peak Slots", "Free equipment", "48 hours booking window"],
+      popular: false,
+    },
+    {
+      name: "Platinum Membership",
+      price: "₹9,500",
+      priceType: "Regular Price",
+      launchPrice: "₹7,500",
+      launchPriceType: "Launch Price",
+      features: ["20 hours of Monthly Slots", "10 Peak Slots", "Free equipment", "72 hours booking window"],
       popular: true,
-    },
-    {
-      name: "Annual",
-      price: "$899",
-      period: "per year",
-      features: ["Everything in Monthly", "2 months free", "Private coaching discount", "VIP events access", "Exclusive merch"],
-      popular: false,
     },
   ];
 
@@ -116,7 +122,7 @@ const Pikler = () => {
                   <a href="#booking">Book a Court</a>
                 </Button>
                 <Button variant="heroOutline" size="xl" asChild>
-                  <a href="#features">Learn More</a>
+                  <a href="tel:+919096867887"> Call Us</a>
                 </Button>
               </div>
             </div>
@@ -191,7 +197,11 @@ const Pikler = () => {
                   <h3 className="font-display text-2xl font-bold mb-2">{plan.name}</h3>
                   <div className="mb-6">
                     <span className="text-4xl font-display font-extrabold">{plan.price}</span>
-                    <span className="text-muted-foreground ml-2">{plan.period}</span>
+                    <span className="text-muted-foreground ml-2">{plan.priceType}</span>
+                  </div>
+                    <div className="mb-6">
+                    <span className="text-4xl font-display font-extrabold">{plan.launchPrice}</span>
+                    <span className="text-muted-foreground ml-2">{plan.launchPriceType}</span>
                   </div>
                   <ul className="space-y-3 mb-8">
                     {plan.features.map((feature) => (
@@ -243,7 +253,7 @@ const Pikler = () => {
                       </div>
                       <div>
                         <h4 className="font-bold mb-1">Location</h4>
-                        <p className="text-muted-foreground">123 Sports Avenue, Downtown</p>
+                        <p className="text-muted-foreground">Pikler, Forest Park, Near Kharadi Bypass, Pune, Maharashtra 411014</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -254,8 +264,7 @@ const Pikler = () => {
                       </div>
                       <div>
                         <h4 className="font-bold mb-1">Hours</h4>
-                        <p className="text-muted-foreground">Mon-Fri: 6AM - 10PM</p>
-                        <p className="text-muted-foreground">Sat-Sun: 7AM - 9PM</p>
+                        <p className="text-muted-foreground">6AM - 11PM All days</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -266,8 +275,25 @@ const Pikler = () => {
                       </div>
                       <div>
                         <h4 className="font-bold mb-1">Contact</h4>
-                        <p className="text-muted-foreground">play@piklercourts.com</p>
-                        <p className="text-muted-foreground">+1 (234) 567-8900</p>
+                        <ul className="space-y-3 text-muted-foreground">
+                          <li>
+                            <a
+                              href="mailto:hey.quadrant@gmail.com"
+                              className="hover:text-primary transition-colors duration-200"
+                            >
+                              hey.quadrant@gmail.com
+                            </a>
+                          </li>
+
+                          <li>
+                            <a
+                              href="tel:+919096867887"
+                              className="hover:text-primary transition-colors duration-200"
+                            >
+                              &#x2706; +91 90968 67887
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -281,7 +307,7 @@ const Pikler = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                           </svg>
                         </div>
-                        <p className="text-muted-foreground">Interactive map coming soon</p>
+                        <p className="text-muted-foreground"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.137583146596!2d73.93933177608773!3d18.56783498253488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3003fbdc9f1%3A0xf77e4bc3d578ff97!2sPikler%20Pickleball%20Court!5e0!3m2!1sen!2sin!4v1773164044539!5m2!1sen!2sin" width="600" height="450" style={{ border: 0, width: "25rem", height: "20rem" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></p>
                       </div>
                     </div>
                   </div>
@@ -308,7 +334,7 @@ const Pikler = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="xl">
-                  Claim Free Trial
+                  Book Free Trial
                 </Button>
                 <Button variant="heroOutline" size="xl" asChild>
                   <Link to="/">Back to Quadrant</Link>
