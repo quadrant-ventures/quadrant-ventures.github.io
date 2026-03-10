@@ -18,5 +18,5 @@ export default defineConfig(({ mode }) => ({
   // For GitHub Pages deployment:
   // 1. Uncomment the 'base' line below
   // 2. Replace 'your-repo-name' with your actual GitHub repository name
-  // base: '/your-repo-name/',
+  base: '/',
 }));
