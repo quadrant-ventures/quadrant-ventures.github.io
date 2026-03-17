@@ -87,6 +87,13 @@ const Pikler = () => {
           content="Experience pickleball at Pikler - premium courts, expert coaching, and a vibrant community. Book your court today at Quadrant Ventures' first venture."
         />
         <meta name="keywords" content="pickleball, Pikler, pickleball courts, sports, Quadrant Ventures, book court" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PEJPPMXFGZ"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PEJPPMXFGZ');
+        ` }} />
       </Helmet>
 
       <div className="min-h-screen bg-background">
