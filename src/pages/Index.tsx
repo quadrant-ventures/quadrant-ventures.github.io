@@ -15,6 +15,13 @@ const Index = () => {
           content="Quadrant Ventures is a collective of four friends building businesses that bring people together. Explore our ventures including Pikler Pickleball Courts."
         />
         <meta name="keywords" content="Quadrant Ventures, startup, ventures, pickleball, Pikler, business, sports" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PEJPPMXFGZ"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PEJPPMXFGZ');
+        ` }} />
       </Helmet>
 
       <div className="min-h-screen bg-background">
