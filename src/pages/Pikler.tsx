@@ -40,35 +40,43 @@ const Pikler = () => {
     },
   ];
 
-  const pricingPlans = [
-    {
-      name: "Silver Membership",
-      price: "₹2,800",
-      priceType: "Regular Price",
-      launchPrice: "₹2,200",
-      launchPriceType: "Launch Price",
-      features: ["8 hours of Monthly Slots", "0 Peak Slots", "Equipment rental", "24 hours booking window"],
-      popular: false,
-    },
-    {
-      name: "Gold Membership",
-      price: "₹5,500",
-      priceType: "Regular Price",
-      launchPrice: "₹4,500", 
-      launchPriceType: "Launch Price",
-      features: ["12 hours of Monthly Slots", "4 Peak Slots", "Free equipment", "48 hours booking window"],
-      popular: false,
-    },
-    {
-      name: "Platinum Membership",
-      price: "₹9,500",
-      priceType: "Regular Price",
-      launchPrice: "₹7,500",
-      launchPriceType: "Launch Price",
-      features: ["20 hours of Monthly Slots", "10 Peak Slots", "Free equipment", "72 hours booking window"],
+  // const pricingPlans = [
+  //   {
+  //     name: "Silver Membership",
+  //     price: "₹2,800",
+  //     priceType: "Regular Price",
+  //     launchPrice: "₹2,200",
+  //     launchPriceType: "Launch Price",
+  //     features: ["8 hours of Monthly Slots", "0 Peak Slots", "Equipment rental", "24 hours booking window"],
+  //     popular: false,
+  //   },
+  //   {
+  //     name: "Gold Membership",
+  //     price: "₹5,500",
+  //     priceType: "Regular Price",
+  //     launchPrice: "₹4,500", 
+  //     launchPriceType: "Launch Price",
+  //     features: ["12 hours of Monthly Slots", "4 Peak Slots", "Free equipment", "48 hours booking window"],
+  //     popular: false,
+  //   },
+  //   {
+  //     name: "Platinum Membership",
+  //     price: "₹9,500",
+  //     priceType: "Regular Price",
+  //     launchPrice: "₹7,500",
+  //     launchPriceType: "Launch Price",
+  //     features: ["20 hours of Monthly Slots", "10 Peak Slots", "Free equipment", "72 hours booking window"],
+  //     popular: true,
+  //   },
+  // ];
+
+  const launchOffers = [{
+      name: "Quarterly Membership",
+      price: "₹2,100",
+      priceType: "",
+      features: ["Flat 50% Off on all bookings", "No rental for paddles", "First 50 members only"],
       popular: true,
-    },
-  ];
+    }];
 
   return (
     <>
@@ -119,7 +127,9 @@ const Pikler = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-slide-up delay-300">
                 <Button variant="hero" size="xl" asChild>
-                  <a href="#booking">Book a Court</a>
+                  <a href="https://playo.co/venues/pune/pikler-pickleball-court-forest-park-pune" target="_blank" rel="noopener noreferrer">
+                    Book a Court
+                  </a>
                 </Button>
                 <Button variant="heroOutline" size="xl" asChild>
                   <a href="tel:+919096867887"> Call Us</a>
@@ -163,7 +173,7 @@ const Pikler = () => {
         </section>
 
         {/* Pricing Section */}
-        <section id="booking" className="py-24 bg-card">
+        {/* <section id="booking" className="py-24 bg-card">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <span className="text-primary font-semibold uppercase tracking-widest text-sm mb-4 block">
@@ -204,6 +214,69 @@ const Pikler = () => {
                     <span className="text-muted-foreground ml-2">{plan.launchPriceType}</span>
                   </div>
                   <ul className="space-y-3 mb-8">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="flex items-center gap-3">
+                        <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
+                          <svg className="w-3 h-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                        <span className="text-foreground/80">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button
+                    variant={plan.popular ? "hero" : "outline"}
+                    size="lg"
+                    className="w-full"
+                  >
+                    <a href="tel:+919096867887"> Call Us</a>
+                  </Button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section> */}
+
+        {/* Launch Offer Section */}
+         <section id="launch-offer" className="py-24 bg-card">
+          <div className="container mx-auto px-6">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <span className="text-primary font-semibold uppercase tracking-widest text-sm mb-4 block">
+                Offer
+              </span>
+              <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+                <span className="text-primary">Grand</span> Launch Offer
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Unlock consistent savings every time you play — for the entire quarter.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-1 gap-8 max-w-5xl mx-auto">
+              {launchOffers.map((plan) => (
+                <div
+                  key={plan.name}
+                  style={{textAlign: 'center'}}
+                  className={`relative p-8 rounded-2xl border transition-all duration-300 ${
+                    plan.popular
+                      ? "bg-primary/5 border-primary scale-105 shadow-xl shadow-primary/10"
+                      : "bg-background border-border hover-lift"
+                  }`}
+                >
+                  {plan.popular && (
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                      <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-bold">
+                        Launch Offer
+                      </span>
+                    </div>
+                  )}
+                  <h3 className="font-display text-2xl font-bold mb-2">{plan.name}</h3>
+                  <div className="mb-6">
+                    <span className="text-4xl font-display font-extrabold">{plan.price}</span>
+                    <span className="text-muted-foreground ml-2">{plan.priceType}</span>
+                  </div>
+                  <ul className="space-y-3 mb-8" style={{width: '300px', marginLeft: 'auto', marginRight: 'auto'}}>
                     {plan.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-3">
                         <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
@@ -278,10 +351,10 @@ const Pikler = () => {
                         <ul className="space-y-3 text-muted-foreground">
                           <li>
                             <a
-                              href="mailto:hey.quadrant@gmail.com"
+                              href="mailto:hey.pikler@gmail.com"
                               className="hover:text-primary transition-colors duration-200"
                             >
-                              hey.quadrant@gmail.com
+                              hey.pikler@gmail.com
                             </a>
                           </li>
 
@@ -334,7 +407,9 @@ const Pikler = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="xl">
-                  Book Free Trial
+                  <Link to="https://playo.co/venues/pune/pikler-pickleball-court-forest-park-pune" target="_blank" rel="noopener noreferrer">
+                    Book a Court
+                  </Link>
                 </Button>
                 <Button variant="heroOutline" size="xl" asChild>
                   <Link to="/">Back to Quadrant</Link>
