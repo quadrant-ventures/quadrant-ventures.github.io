@@ -134,7 +134,7 @@ const Pikler = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-slide-up delay-300">
                 <Button variant="hero" size="xl" asChild>
-                  <a href="https://playo.co/venues/pune/pikler-pickleball-court-forest-park-pune" target="_blank" rel="noopener noreferrer">
+                  <a href="https://playo.co/venues/pune/pikler-pickleball-court-kharadi-pune" target="_blank" rel="noopener noreferrer">
                     Book a Court
                   </a>
                 </Button>
@@ -414,7 +414,7 @@ const Pikler = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="xl">
-                  <Link to="https://playo.co/venues/pune/pikler-pickleball-court-forest-park-pune" target="_blank" rel="noopener noreferrer">
+                  <Link to="https://playo.co/venues/pune/pikler-pickleball-court-kharadi-pune" target="_blank" rel="noopener noreferrer">
                     Book a Court
                   </Link>
                 </Button>
