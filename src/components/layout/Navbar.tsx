@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
 
           <Button variant="hero" size="sm" asChild>
-            <Link to="https://playo.co/venues/pune/pikler-pickleball-court-kharadi-pune" target="_blank" rel="noopener noreferrer">
+            <Link to="http://go.playo.app/PLAYOO/oLYGN" target="_blank" rel="noopener noreferrer">
               Book a Court
             </Link>
           </Button>

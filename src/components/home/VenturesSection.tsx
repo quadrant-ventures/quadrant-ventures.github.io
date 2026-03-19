@@ -68,7 +68,7 @@ const VenturesSection = () => {
                     <Link to="/pikler">Explore Pikler</Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
-                    <Link to="https://playo.co/venues/pune/pikler-pickleball-court-kharadi-pune" target="_blank" rel="noopener noreferrer">
+                    <Link to="http://go.playo.app/PLAYOO/oLYGN" target="_blank" rel="noopener noreferrer">
                       Book a Court
                     </Link>
                   </Button>
