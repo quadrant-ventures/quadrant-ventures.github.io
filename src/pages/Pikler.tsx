@@ -6,6 +6,9 @@ import Footer from "@/components/layout/Footer";
 import piklerLogo from "@/assets/pikler-logo.png";
 import piklerHero from "@/assets/pikler-hero.jpg";
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Pikler = () => {
   const features = [
     {
@@ -71,12 +74,21 @@ const Pikler = () => {
   // ];
 
   const launchOffers = [{
-      name: "Quarterly Membership",
-      price: "₹2,100",
-      priceType: "",
-      features: ["Flat 50% Off on all bookings", "No rental for paddles", "First 50 members only"],
-      popular: true,
-    }];
+    name: "Quarterly Membership",
+    price: "₹2,100",
+    priceType: "",
+    features: ["Flat 50% Off on all bookings", "No rental for paddles", "First 50 members only"],
+    popular: true,
+  }];
+
+  const location = useLocation();
+  useEffect(() => {
+    console.log("Page view:", location.pathname);
+
+    window.gtag('config', 'G-JDYJX5CQPG', {
+      page_path: location.pathname,
+    });
+  }, [location]);
 
   return (
     <>
@@ -87,13 +99,6 @@ const Pikler = () => {
           content="Experience pickleball at Pikler - premium courts, expert coaching, and a vibrant community. Book your court today at Quadrant Ventures' first venture."
         />
         <meta name="keywords" content="pickleball, Pikler, pickleball courts, sports, Quadrant Ventures, book court" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PEJPPMXFGZ"></script>
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-PEJPPMXFGZ');
-        ` }} />
       </Helmet>
 
       <div className="min-h-screen bg-background">

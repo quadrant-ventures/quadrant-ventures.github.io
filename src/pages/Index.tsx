@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/home/HeroSection";
@@ -6,6 +8,13 @@ import AboutSection from "@/components/home/AboutSection";
 import VenturesSection from "@/components/home/VenturesSection";
 
 const Index = () => {
+  const location = useLocation();
+  useEffect(() => {
+    console.log("Page view:", location.pathname);
+    window.gtag('config', 'G-JDYJX5CQPG', {
+      page_path: location.pathname,
+    });
+  }, [location]);
   return (
     <>
       <Helmet>
@@ -15,13 +24,6 @@ const Index = () => {
           content="Quadrant Ventures is a collective of four friends building businesses that bring people together. Explore our ventures including Pikler Pickleball Courts."
         />
         <meta name="keywords" content="Quadrant Ventures, startup, ventures, pickleball, Pikler, business, sports" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDYJX5CQPG"></script>
-        <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-JDYJX5CQPG');
-        ` }} />
       </Helmet>
 
       <div className="min-h-screen bg-background">
