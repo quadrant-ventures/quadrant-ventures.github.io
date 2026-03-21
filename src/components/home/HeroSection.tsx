@@ -48,16 +48,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in delay-500">
-        <div className="flex flex-col items-center gap-2 text-muted-foreground">
-          <span className="text-sm uppercase tracking-widest">Scroll</span>
-          <div className="w-6 h-10 border-2 border-muted-foreground/50 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-primary rounded-full animate-bounce" />
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
