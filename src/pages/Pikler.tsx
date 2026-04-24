@@ -144,7 +144,7 @@ const Pikler = () => {
                   </a>
                 </Button>
                 <Button variant="heroOutline" size="xl" asChild>
-                  <a href="tel:+919096867887"> Call Us</a>
+                  <a href="tel:+919096867887"> <span style={{fontSize: 50}}>&#x2706;</span> Call Us</a>
                 </Button>
               </div>
             </div>
@@ -242,7 +242,7 @@ const Pikler = () => {
                     size="lg"
                     className="w-full"
                   >
-                    <a href="tel:+919096867887"> Call Us</a>
+                    <a href="tel:+919096867887"> <span style={{fontSize: 50}}>&#x2706;</span> Call Us</a>
                   </Button>
                 </div>
               ))}
@@ -305,7 +305,7 @@ const Pikler = () => {
                     size="lg"
                     className="w-full"
                   >
-                    <a href="tel:+919096867887"> Call Us</a>
+                    <a href="tel:+919096867887"> <span style={{fontSize: 50, verticalAlign: 'middle'}}>&#x2706;</span> Call Us</a>
                   </Button>
                 </div>
               ))}
@@ -338,7 +338,7 @@ const Pikler = () => {
                       </div>
                       <div>
                         <h4 className="font-bold mb-1">Location</h4>
-                        <p className="text-muted-foreground">Pikler, Forest Park, Near Kharadi Bypass, Pune, Maharashtra 411014</p>
+                        <p className="text-muted-foreground">Pikler Pickleball Court, Forest Park, near Kharadi Bypass, Pune International Airport Area, Lohegaon, Pune, Maharashtra 411014</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -349,7 +349,7 @@ const Pikler = () => {
                       </div>
                       <div>
                         <h4 className="font-bold mb-1">Hours</h4>
-                        <p className="text-muted-foreground">6AM - 11PM All days</p>
+                        <p className="text-muted-foreground">6AM - 12AM All days</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">

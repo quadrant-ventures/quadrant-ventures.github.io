@@ -43,7 +43,7 @@ const HeroSection = () => {
               <Link to="/pikler">Explore Pikler Courts</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="tel:+919096867887">Call Us</a>
+              <a href="tel:+919096867887"><span style={{fontSize: 50}}>&#x2706;</span> Call Us</a>
             </Button>
           </div>
         </div>
